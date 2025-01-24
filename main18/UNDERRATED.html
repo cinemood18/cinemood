@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Underrated Movies</title>
+    <style>
+        body {
+    transition: opacity 0.5s ease-in-out;
+}
+body.hidden {
+    opacity: 0;
+}
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(mveimg.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: #F4F4F4;
+            color: #FFC857;
+            margin: 0;
+            padding: 0;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1B1F3B;
+            padding: 15px 20px;
+        }
+        .header a {
+            color: #FFC857;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .header a:hover {
+            color: #D72638;
+            text-decoration: underline;
+        }
+        .nav-links, .auth-links {
+            display: flex;
+        }
+        main {
+            padding: 20px;
+        }
+        .movie-category {
+            margin-bottom: 30px;
+        }
+        .movie-category h2 {
+            color: #1B1F3B;
+            background-color: #FFC857;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .movie-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .movie {
+            background-color: #1B1F3B;
+            color: #FFC857;
+            width: 250px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .movie:hover {
+            transform: scale(1.05);
+        }
+        .movie img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+        .movie h3 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .movie p {
+            margin: 5px 10px;
+            font-size: 14px;
+        }
+        .movie span {
+            display: block;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 10px 0;
+            color: #D72638;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #1B1F3B;
+            color: #FFC857;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="nav-links">
+        <a href="mainfinal.html">Home</a>
+        <a href="OSCAR.html">Oscars</a>
+        <a href="IMDB.html">IMDb</a>
+        <a href="UNDERRATED.html">Underrated</a>
+    </div>
+    <div class="auth-links">
+        <a href="#login">Login</a>
+        <a href="#signup">Sign Up</a>
+    </div>
+</div>
+
+<main>
+    <section class="movie-category">
+        <h2>Underrated Movies</h2>
+        <div class="movie-list">
+            <!-- Movie Cards will be dynamically inserted here -->
+            <div class="movie">
+                <img id="image-1" src="" alt="Court Movie Poster" loading="lazy">
+                <h3>Court (2014)</h3>
+                <p><strong>Directed by:</strong> Chaitanya Tamhane</p>
+                <p><strong>Genre:</strong> Drama</p>
+                <span>Highly Underrated</span>
+            </div>
+            <div class="movie">
+                <img id="image-2" src="" alt="Radhe Shyam Movie Poster" loading="lazy">
+                <h3>Radhe Shyam (2022)</h3>
+                <p><strong>Directed by:</strong>Radha Krishna Kumar</p>
+                <p><strong>Genre:</strong> Drama, Romance</p>
+                <span>Hidden Gem</span>
+            </div>
+            <div class="movie">
+                <img id="image-3" src="" alt="Barfi! Movie Poster" loading="lazy">
+                <h3>Barfi! (2012)</h3>
+                <p><strong>Directed by:</strong> Anurag Basu</p>
+                <p><strong>Genre:</strong> Drama, Romance</p>
+                <span>Must Watch</span>
+            </div>
+            <div class="movie">
+                <img id="image-4" src="" alt="Ship of Theseus Movie Poster" loading="lazy">
+                <h3>Ship of Theseus (2012)</h3>
+                <p><strong>Directed by:</strong> Anand Gandhi</p>
+                <p><strong>Genre:</strong> Drama, Philosophy</p>
+                <span>Deeply Moving</span>
+            </div>
+            <div class="movie">
+                <img id="image-5" src="" alt="Drishyam Movie Poster" loading="lazy">
+                <h3>Drishyam (2015)</h3>
+                <p><strong>Directed by:</strong> Jeethu Joseph</p>
+                <p><strong>Genre:</strong> Thriller, Crime</p>
+                <span>Complex & Engaging</span>
+            </div>
+            <div class="movie">
+                <img id="image-6" src="" alt="Masaan Movie Poster" loading="lazy">
+                <h3>Masaan (2015)</h3>
+                <p><strong>Directed by:</strong> Neeraj Ghaywan</p>
+                <p><strong>Genre:</strong> Drama</p>
+                <span>Low Budget Masterpiece</span>
+            </div>
+            <div class="movie">
+                <img id="image-7" src="" alt="Piku Movie Poster" loading="lazy">
+                <h3>Piku (2015)</h3>
+                <p><strong>Directed by:</strong> Shoojit Sircar</p>
+                <p><strong>Genre:</strong> Drama, Comedy</p>
+                <span>Underrated Feel-good Film</span>
+            </div>
+            <div class="movie">
+                <img id="image-8" src="" alt="Kahaani Movie Poster" loading="lazy">
+                <h3>Kahaani (2012)</h3>
+                <p><strong>Directed by:</strong> Sujoy Ghosh</p>
+                <p><strong>Genre:</strong> Thriller, Mystery</p>
+                <span>Suspenseful & Thrilling</span>
+            </div>
+            <div class="movie">
+                <img id="image-9" src="" alt="Ankhon Dekhi Movie Poster" loading="lazy">
+                <h3>Ankhon Dekhi (2013)</h3>
+                <p><strong>Directed by:</strong> Rajat Kapoor</p>
+                <p><strong>Genre:</strong> Drama, Comedy</p>
+                <span>Highly Entertaining</span>
+            </div>
+            <div class="movie">
+                <img id="image-10" src="" alt="Tumbbad Movie Poster" loading="lazy">
+                <h3>Tumbbad (2018)</h3>
+                <p><strong>Directed by:</strong> Rahi Anil Barve</p>
+                <p><strong>Genre:</strong> Fantasy, Horror</p>
+                <span>Visionary</span>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Underrated Movies. All rights reserved.</p>
+</footer>
+
+<script>
+    const apiKey = '417f94d1'; // Replace with your OMDB API key
+
+    const movies = [
+        { "id": 1, "title": "Court", "year": 2014, "director": "Chaitanya Tamhane" },
+        { "id": 2, "title": "Radhe Shyam", "year": 2022, "director": "Radha Krishna Kumar" },
+        { "id": 3, "title": "Barfi!", "year": 2012, "director": "Anurag Basu" },
+        { "id": 4, "title": "Ship of Theseus", "year": 2012, "director": "Amit Masurkar" },
+        { "id": 5, "title": "Drishyam", "year": 2015, "director": "Jeethu Joseph" },
+        { "id": 6, "title": "Masaan", "year": 2015, "director": "Neeraj Ghaywan" },
+        { "id": 7, "title": "Piku", "year": 2015, "director": "Shoojit Sircar" },
+        { "id": 8, "title": "Kahaani", "year": 2012, "director": "Sujoy Ghosh" },
+        { "id": 9, "title": "Ankhon Dekhi", "year": 2013, "director": "Rajat Kapoor" },
+        { "id": 10, "title": "Tumbbad", "year": 2018, "director": "Rahi Anil Barve" }
+    ];
+
+    async function fetchUnderratedMovies() {
+        try {
+            // Try to load images from localStorage
+            const storedImages = JSON.parse(localStorage.getItem('underratedMovieImages'));
+            if (storedImages && storedImages.length === movies.length) {
+                console.log('Loaded images from localStorage');
+                updateMovieImages(storedImages);
+                return; // Exit if images are found in localStorage
+            }
+
+            // Fetch posters for the movies
+            const images = await Promise.all(
+                movies.map(async (movie) => {
+                    try {
+                        const response = await fetch(
+                            `https://www.omdbapi.com/?t=${encodeURIComponent(movie.title)}&y=${movie.year}&apikey=${apiKey}`
+                        );
+
+                        if (!response.ok) {
+                            throw new Error(`OMDb API responded with status ${response.status}`);
+                        }
+
+                        const data = await response.json();
+
+                        if (data.Response === "True") {
+                            return {
+                                id: movie.id,
+                                poster: data.Poster !== "N/A" ? data.Poster : 'path/to/default-placeholder.jpg',
+                                title: movie.title,
+                                year: movie.year
+                            };
+                        } else {
+                            console.error(`OMDb Error for ${movie.title}: ${data.Error}`);
+                            return { id: movie.id, poster: 'path/to/default-placeholder.jpg' };
+                        }
+                    } catch (error) {
+                        console.error(`Error fetching data for ${movie.title}: ${error.message}`);
+                        return { id: movie.id, poster: 'path/to/default-placeholder.jpg' }; // Fallback image
+                    }
+                })
+            );
+
+            // Save images to localStorage for future use
+            localStorage.setItem('underratedMovieImages', JSON.stringify(images));
+            updateMovieImages(images);
+
+        } catch (error) {
+            console.error('Error fetching or storing underrated movie posters:', error.message);
+        }
+    }
+
+    // Update the movie cards with images and details
+    function updateMovieImages(images) {
+        const movieList = document.querySelector('.movie-list');
+        movieList.innerHTML = ''; // Clear any existing content
+
+        images.forEach((image) => {
+            const movie = movies.find(m => m.id === image.id); // Find the correct movie object
+            const movieCard = document.createElement('div');
+            movieCard.classList.add('movie');
+            movieCard.innerHTML = `
+                <img id="image-${image.id}" src="${image.poster}" alt="${image.title} Movie Poster">
+                <h3>${image.title} (${image.year})</h3>
+                <p><strong>Directed by:</strong> ${movie.director}</p> <!-- Director dynamically inserted -->
+                <span>${getMovieLabel(movie.id)}</span> <!-- Dynamically generated label -->
+            `;
+            movieList.appendChild(movieCard);
+        });
+    }
+
+    // Function to get the movie label (Must Watch, Underrated, etc.)
+    function getMovieLabel(movieId) {
+        const labels = {
+            1: "Highly Underrated",
+            2: "Hidden Gem",
+            3: "Must Watch",
+            4: "Deeply Moving",
+            5: "Complex & Engaging",
+            6: "Low Budget Masterpiece",
+            7: "Underrated Feel-good Film",
+            8: "Suspenseful & Thrilling",
+            9: "Highly Entertaining",
+            10: "Visionary"
+        };
+        return labels[movieId] || "Underrated Movie"; // Fallback if no label is found
+    }
+
+    // Retry if an image fails to load
+    document.addEventListener(
+        'error',
+        (event) => {
+            const element = event.target;
+            if (element.tagName === 'IMG') {
+                console.error(`Image failed to load: ${element.src}`);
+                element.src = 'path/to/default-placeholder.jpg'; // Set fallback image
+            }
+        },
+        true
+    );
+
+    // Call the function to fetch underrated movie posters
+    fetchUnderratedMovies();
+</script>
+</body>
+</html>
