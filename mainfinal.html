@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="mainfinal.css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="./OSCAR/OSCAR.html">Oscars</a>
+            <a href="./IMDb/IMDB.html">IMDb</a>
+            <a href="./UNDERRATED/UNDERRATED.html">Underrated</a>
+        </div>
+        <div class="auth-links">
+            <a href="#login">Login</a>
+            <a href="#signup">Sign Up</a>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button onclick="toggleGenre('Action')">Action</button>
+        <button onclick="toggleGenre('Drama')">Drama</button>
+        <button onclick="toggleGenre('Crime')">Crime</button>
+        <button onclick="toggleGenre('Gore')">Gore</button>
+        <button onclick="toggleGenre('Suspense')">Suspense</button>
+        <button onclick="toggleGenre('Thriller')">Thriller</button>
+        <button onclick="toggleGenre('Romance')">Romance</button>
+        <button onclick="toggleGenre('Sci-Fi')">Sci-Fi</button>
+        <button onclick="toggleGenre('Fantasy')">Fantasy</button>
+        <button onclick="toggleGenre('Comedy')">Comedy</button>
+        <button onclick="toggleGenre('Mystery')">Mystery</button>
+        <button onclick="toggleGenre('Horror')">Horror</button>
+        <button onclick="toggleGenre('Adventure')">Adventure</button>
+        <button onclick="toggleGenre('Animation')">Animation</button>
+        <button onclick="toggleGenre('Documentary')">Documentary</button>
+        <button onclick="toggleGenre('Biopic')">Biopic</button>
+        <button onclick="toggleGenre('Musical')">Musical</button>
+        <button onclick="toggleGenre('Superhero')">Superhero</button>
+        <button onclick="toggleGenre('Historical')">Historical</button>
+        <button onclick="toggleGenre('Family')">Family</button>
+        <button onclick="toggleGenre('Sport')">Sport</button>
+    </div>
+
+    <div class="card-container" id="cardContainer">
+        <!-- Movie cards will be displayed here -->
+    </div>
+
+    <script src="mainfinal.js"></script>
+
+</body>
+</html>
